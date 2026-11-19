@@ -1,3 +1,5 @@
 # Welcome to Baseball
 
-Explore the history of Major League Baseball through its data, using the Lahman database. This site looks at the players, teams, and seasons that have shaped the game.
+Explore Major League Baseball history through the Lahman database. This site looks at home runs from two angles: how the league's home runs per game change from season to season, and which players lead the career home run rankings.
+
+The season-by-season view traces how power hitting has shifted over time. The career leaderboard puts the biggest totals in context with each player's full name and the span of seasons they played. Visit the analysis pages in the navbar to explore both views.
