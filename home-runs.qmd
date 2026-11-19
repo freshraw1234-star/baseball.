@@ -26,3 +26,29 @@ hr_by_season <- Teams |>
 ggplot(hr_by_season, aes(x = yearID, y = home_runs_per_game)) +
   geom_line()
 ```
+
+## Career home run leaders
+
+```{r}
+career_hr_leaders <- Batting |>
+  group_by(playerID) |>
+  summarize(
+    career_home_runs = sum(HR, na.rm = TRUE),
+    first_season = min(yearID),
+    last_season = max(yearID),
+    .groups = "drop"
+  ) |>
+  inner_join(People, by = "playerID") |>
+  mutate(
+    player = paste(nameFirst, nameLast),
+    seasons = paste(first_season, last_season, sep = "-")
+  ) |>
+  slice_max(career_home_runs, n = 10, with_ties = FALSE) |>
+  select(player, career_home_runs, seasons)
+
+knitr::kable(
+  career_hr_leaders,
+  col.names = c("Player", "Career home runs", "Seasons"),
+  caption = "Top 10 career home run leaders"
+)
+```
