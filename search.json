@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to Baseball",
+    "section": "",
+    "text": "Welcome to Baseball\nExplore Major League Baseball history through the Lahman database. This site looks at home runs from two angles: how the league’s home runs per game change from season to season, and which players lead the career home run rankings.\nThe season-by-season view traces how power hitting has shifted over time. The career leaderboard puts the biggest totals in context with each player’s full name and the span of seasons they played. Visit the analysis pages in the navbar to explore both views."
+  },
+  {
+    "objectID": "home-runs.html#career-home-run-leaders",
+    "href": "home-runs.html#career-home-run-leaders",
+    "title": "Home runs",
+    "section": "Career home run leaders",
+    "text": "Career home run leaders\n\n\n\nTop 10 career home run leaders\n\n\nPlayer\nCareer home runs\nSeasons\n\n\n\n\nBarry Bonds\n762\n1986-2007\n\n\nHank Aaron\n755\n1954-1976\n\n\nBabe Ruth\n714\n1914-1935\n\n\nAlbert Pujols\n703\n2001-2022\n\n\nAlex Rodriguez\n696\n1994-2016\n\n\nWillie Mays\n660\n1948-1973\n\n\nKen Griffey\n630\n1989-2010\n\n\nJim Thome\n612\n1991-2012\n\n\nSammy Sosa\n609\n1989-2007\n\n\nFrank Robinson\n586\n1956-1976"
+  }
+]
