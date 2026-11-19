@@ -1,0 +1,28 @@
+---
+title: "Home runs"
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+library(Lahman)
+```
+
+```{r}
+#| cache: true
+hr_by_season <- Teams |>
+  group_by(yearID) |>
+  summarize(
+    total_home_runs = sum(HR),
+    total_team_games = sum(G),
+    .groups = "drop"
+  ) |>
+  mutate(
+    home_runs_per_game = total_home_runs / total_team_games
+  )
+```
+
+```{r}
+ggplot(hr_by_season, aes(x = yearID, y = home_runs_per_game)) +
+  geom_line()
+```
